@@ -1,0 +1,39 @@
+//colors
+$color--primary: rgba(153, 74, 228, 0.846);
+$color--primary--dark:rgb(128, 2, 245);
+//black
+$color--black: rgba(black, 0.3);
+
+//white
+$color--white: white;
+
+//------------------------TYPOGRAPHY-------------------------------------
+* {
+  font-size: 1.6rem;
+  color: $color--white;
+}
+
+.heading--primary {
+  font-size: 13rem;
+  letter-spacing: 1rem;
+  color: $color--white;
+  font-weight: 100;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.subHeader--text {
+  color: $color--white;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.link {
+  text-decoration: none ;
+}
+//-----------------------list--------------------------------------------
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}

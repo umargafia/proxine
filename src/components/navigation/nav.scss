@@ -1,3 +1,46 @@
-.nav{
-        color: aqua;
+@import "../../global/global.scss";
+
+.nav {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  background-color: $color--primary;
+  clip-path: polygon(0% 100%, 100% 85%, 100% 0%, 0% 0%);
+  &__intro {
+    flex: 1;
+    padding: 2rem;
+    position: relative;
+    &--img {
+      height: 7rem;
+      width: 7rem;
+      border-radius: 50%;
+      background-color: $color--white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--header {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      line-height: 6rem;
+
+      & span {
+        margin-left: 1rem;
+      }
+    }
+  }
+  &__navigation {
+    flex: 1;
+    clip-path: polygon(0% 0%, 0% 30%, 46% 100%, 100% 100%, 100% 0%);
+    background-color: $color--black;
+
+    &--header{
+      margin: 3rem;
+      color:$color--primary--dark;
+    }
+  }
 }

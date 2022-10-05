@@ -1,20 +1,11 @@
 @import "./variables.scss";
 
-* {
-  font-size: 1.6rem;
-  font-family: sans-serif;
-  color: $color-grey-light-2;
-}
-body {
-  margin: 0 2rem;
-}
 
 .heading--primary {
   font-size: 10rem;
   letter-spacing: 0.5rem;
   color: $color-grey-light-2;
   font-weight: 100;
-
   text-transform: uppercase;
 }
 
@@ -50,4 +41,5 @@ body {
 .paragraph--text {
   font-weight: 500;
   padding: 0.7rem 3rem;
+  font-size: 2rem;
 }

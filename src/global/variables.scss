@@ -1,6 +1,6 @@
 //primary color
-$color--primary: aquamarine;
-$color--primary--dark: rgb(33, 179, 164);
+$color--primary: #6259e8;
+$color--primary--dark: #473bf0;
 $primary--gradient: linear-gradient(
   to bottom right,
   $color--primary--dark,
@@ -8,17 +8,17 @@ $primary--gradient: linear-gradient(
 );
 
 //secondary color
-$color--secondary: #ecd72a;
-$color--secondary--dark: #c9b60a;
+$color--secondary:#c4c5d0;
+$color--secondary--dark:#ACADBC;
 $secondary--gradient: linear-gradient(
   to bottom right,
-  $color--secondary--dark,
-  $color--secondary
+  $color--secondary,
+  $color--secondary--dark
 );
 
 // tertiary
-$color--tertiary: #ed7c8f;
-$color--tertiary--dark: #f2506b;
+$color--tertiary: #9B9ECE;
+$color--tertiary--dark:#9B9ECE;
 $tertiary--gradient: linear-gradient(
   to bottom right,
   $color--tertiary--dark,

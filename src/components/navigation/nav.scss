@@ -57,13 +57,13 @@
   }
   &__navigation {
     flex: 1;
+    min-height: 50rem;
     clip-path: polygon(0% 0%, 0% 30%, 46% 100%, 100% 100%, 100% 0%);
     background-image: linear-gradient(
       to bottom right,
       rgba($color--tertiary--dark, 0.5),
       rgba($color--tertiary, 0.5)
     );
-
     &--header {
       margin: 3rem;
       color: $color--primary--dark;

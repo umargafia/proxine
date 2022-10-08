@@ -9,7 +9,7 @@ export const Nav = () => {
       </div>
       <div className="nav">
         <div className="nav__intro">
-          <div className="nav__intro--img">Logo</div>
+          {/* <div className="nav__intro--img">Logo</div> */}
           <div className="nav__intro--header">
             <h1 className="heading--primary">Proxine</h1>
             <span className="subHeader--text">

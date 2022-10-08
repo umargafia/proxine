@@ -1,4 +1,5 @@
 import { About } from "./components/about/About";
+import { Credit } from "./components/credit/Credit";
 import { Nav } from "./components/navigation/Nav";
 import "./global/global.scss";
 
@@ -7,8 +8,9 @@ function App() {
     <div className="app">
       <section className="sections">
         <Nav />
-        <About/>
-     </section>
+        <About />
+        <Credit />
+      </section>
     </div>
   );
 }

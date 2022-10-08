@@ -15,8 +15,7 @@
     text-align: center;
   }
   &__left {
-    @include margin-top-huge;
-    @include margin-bottom-huge;
+       @include margin-bottom-huge;
     & h3 {
       margin-bottom: -2rem;
     }

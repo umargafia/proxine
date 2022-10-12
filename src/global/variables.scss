@@ -8,8 +8,8 @@ $primary--gradient: linear-gradient(
 );
 
 //secondary color
-$color--secondary:#c4c5d0;
-$color--secondary--dark:#ACADBC;
+$color--secondary: #c4c5d0;
+$color--secondary--dark: #989bc9;
 $secondary--gradient: linear-gradient(
   to bottom right,
   $color--secondary,
@@ -17,8 +17,8 @@ $secondary--gradient: linear-gradient(
 );
 
 // tertiary
-$color--tertiary: #9B9ECE;
-$color--tertiary--dark:#9B9ECE;
+$color--tertiary: #9b9ece;
+$color--tertiary--dark: #8288dc;
 $tertiary--gradient: linear-gradient(
   to bottom right,
   $color--tertiary--dark,
@@ -41,3 +41,5 @@ $color--white: white;
 //shadow
 $shadow--1: 0 1rem 1rem rgba($color--black, 0.4);
 $shadow--2: 0 1.5rem 2rem rgba($color--black, 0.4);
+$shadow--3: 0 1.5rem 4rem rgba($color--black, 0.15);
+$shadow--4: 0 1.5rem 3rem rgba($color--black, 0.5);

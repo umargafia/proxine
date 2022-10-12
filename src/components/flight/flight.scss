@@ -1,0 +1,23 @@
+@import "../../global/variables.scss";
+
+.flight {
+  background-image: $secondary--gradient;
+  padding: 5rem;
+
+  &__heading {
+    text-align: center;
+  }
+  .cart-section {
+    background-color: $color--secondary--dark;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+  }
+  &__carts {
+    flex: 1;
+    padding: 2rem 0;
+    display: flex;
+    overflow: auto;
+    min-height: 45rem;
+  }
+}

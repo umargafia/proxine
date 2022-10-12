@@ -1,0 +1,118 @@
+@import "./variables.scss";
+
+.cart {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+
+  width: 30rem;
+  margin-right: 2rem;
+  &__side {
+    padding: 2rem;
+    margin: 0rem 2rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40rem;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: $shadow--3;
+  }
+  &__front {
+    background-image: $primary--gradient;
+  }
+
+  &__back {
+    background: $color-grey-light-2;
+    transform: rotateY(180deg);
+  }
+
+  &:hover &__front {
+    transform: rotateY(-180deg);
+  }
+  &:hover &__back {
+    transform: rotateY(0);
+  }
+
+  //styling the cart body
+  &__header {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  &__img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: $shadow--1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-grey-dark-3;
+    margin-right: auto;
+  }
+
+  &__body {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__state {
+    display: flex;
+    margin: 1rem 0.5rem;
+    align-items: center;
+  }
+  &__back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.text {
+  color: $color--black;
+
+  &__header {
+    display: block;
+    flex: 0 0 60%;
+    font-size: 3rem;
+    text-transform: capitalize;
+    letter-spacing: 0.3rem;
+  }
+  &__from {
+    color: inherit;
+    font-weight: 800;
+  }
+  &__state {
+    color: inherit;
+    padding: 0 0.5rem;
+    font-size: 3rem;
+    text-transform: capitalize;
+  }
+  &__date {
+    color: inherit;
+  }
+  &__time {
+    color: inherit;
+    font-weight: 800;
+    margin-top: 2rem;
+  }
+  &__proxine {
+    display: block;
+    margin-top: 30%;
+    text-align: right;
+    font-weight: 800;
+    letter-spacing: 0.5rem;
+  }
+  &__price{
+        font-size: 7rem;
+        font-weight: 100;
+  }
+}

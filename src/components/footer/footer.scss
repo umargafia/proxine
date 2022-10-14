@@ -1,0 +1,23 @@
+@import "../../global/variables.scss";
+
+.footer {
+  background-image: $primary--gradient;
+  min-height: 15rem;
+  letter-spacing: 0.5rem;
+  position: relative;
+
+  & span {
+    letter-spacing: 0;
+    display: inline-block;
+    
+  }
+
+  .copyright-text {
+    color: $color--white;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    left: 40%;
+    text-transform: uppercase;
+  }
+}

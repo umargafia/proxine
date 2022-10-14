@@ -33,8 +33,12 @@ export const Cart = () => {
         </div>
       </div>
       <div className="cart__back cart__side">
-        <div className="cart__back">
-          <h3 className="text__price text">55,00</h3>
+        <div className="cart__back ">
+          <div className="cart__back--price">
+            <span className="text__only text">only</span>
+            <h3 className="text__price text">55,00</h3>
+          </div>
+
           <Button text="Book Now" />
         </div>
       </div>
@@ -44,4 +48,18 @@ export const Cart = () => {
 
 export const Button = ({ text }) => {
   return <button className="button">{text} &rarr;</button>;
+};
+
+export const Comment = () => {
+  return (
+    <div className="comments__section">
+      <div className="comments__image">Image</div>
+      <p className="comments__paragraph paragraph--text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+        temporibus, nemo itaque animi accusantium sed. Consequatur porro magnam
+        unde assumenda cumque quos nobis quas. Suscipit cum provident hic nemo
+        id.
+      </p>
+    </div>
+  );
 };

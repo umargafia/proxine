@@ -1,6 +1,8 @@
 import { About } from "./components/about/About";
+import { Comments } from "./components/comments/Comments";
 import { Credit } from "./components/credit/Credit";
 import { Flight } from "./components/flight/Flight";
+import { Footer } from "./components/footer/Footer";
 import { Nav } from "./components/navigation/Nav";
 import "./global/global.scss";
 
@@ -11,7 +13,9 @@ function App() {
         <Nav />
         <About />
         <Credit />
-        <Flight/>
+        <Flight />
+        <Comments />
+        <Footer />
       </section>
     </div>
   );

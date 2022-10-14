@@ -26,7 +26,7 @@
   border-bottom: 1px solid $color-grey-dark-2;
   &:hover {
     transform: scale(1.4) skewX(-10deg);
-    color: $color-grey-dark;
+    color: $color--primary;
   }
 }
 
@@ -36,6 +36,7 @@
   font-weight: 100;
   color: $color--primary--dark;
   padding: 2rem;
+  text-align: center;
 }
 
 .paragraph--text {
@@ -44,7 +45,7 @@
   font-size: 2rem;
 }
 
-
-.heading--secondary{
-
+.heading--secondary {
 }
+
+

@@ -5,7 +5,13 @@ export const Nav = () => {
   return (
     <div className="navigation">
       <div className="bg-video">
-        <video src={background} autoPlay muted loop className="bg-video__content" />
+        <video
+          src={background}
+          autoPlay
+          muted
+          loop
+          className="bg-video__content"
+        />
       </div>
       <div className="nav">
         <div className="nav__intro">
@@ -26,7 +32,7 @@ export const Nav = () => {
                 </a>
               </li>
               <li className="list--item">
-                <a href="#" className="link">
+                <a href="#flight" className="link">
                   Flight
                 </a>
               </li>

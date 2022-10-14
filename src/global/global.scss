@@ -10,11 +10,13 @@ body {
 }
 
 .sections {
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  height: 100vh;
 
   > * {
     scroll-snap-align: start;
+    &:not(:last-child) {
+      min-height: 90vh;
+    }
   }
 }
 
@@ -85,7 +87,6 @@ body {
 .button {
   border: none;
   padding: 1rem;
-  color: $color--black;
   background-image: $primary--gradient;
   box-shadow: $shadow--4;
   cursor: pointer;

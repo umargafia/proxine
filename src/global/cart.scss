@@ -5,7 +5,7 @@
   -moz-perspective: 150rem;
   position: relative;
 
-  width: 30rem;
+  min-width: 30rem;
   margin-right: 2rem;
   &__side {
     padding: 2rem;
@@ -71,7 +71,8 @@
   &__back {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    height: 100%;
     align-items: center;
   }
 }
@@ -111,8 +112,14 @@
     font-weight: 800;
     letter-spacing: 0.5rem;
   }
-  &__price{
-        font-size: 7rem;
-        font-weight: 100;
+  &__price {
+    font-size: 7rem;
+    font-weight: 100;
+    color: $color--primary;
+  }
+
+  &__only {
+    font-size: 3rem;
+    color: $color-grey-dark-3;
   }
 }

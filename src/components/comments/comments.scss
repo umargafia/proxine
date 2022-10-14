@@ -1,0 +1,49 @@
+@import "../../global/variables.scss";
+
+.comments {
+  padding: 3rem;
+  background-image: linear-gradient(
+    to right bottom,
+    $color--white,
+    $color--secondary
+  );
+
+  &__section {
+    width: 70%;
+    background-color: $color--white;
+    transform: skewX(-6deg);
+    min-height: 13em;
+    color: $color--white;
+    margin: 13rem auto;
+    padding: 0 3rem;
+    box-shadow: $shadow--3;
+    > * {
+      transform: skewX(6deg);
+    }
+
+    &:last-child {
+      margin-bottom: 3rem;
+    }
+  }
+  &__image {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    box-shadow: $shadow--3;
+    background-color: $color--white;
+    position: relative;
+    left: 40%;
+    top: -7rem;
+    color: $color--black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+  }
+  &__paragraph {
+    color: $color-grey-dark-3;
+    font-family: serif;
+    margin-top: -6rem;
+  }
+}

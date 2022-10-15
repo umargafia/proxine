@@ -4,7 +4,7 @@ import { Credit } from "./components/credit/Credit";
 import { Flight } from "./components/flight/Flight";
 import { Footer } from "./components/footer/Footer";
 import { Nav } from "./components/navigation/Nav";
-import "./global/global.scss";
+
 
 function App() {
   return (

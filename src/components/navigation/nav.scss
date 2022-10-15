@@ -15,6 +15,7 @@
     width: 100%;
     clip-path: polygon(0% 100%, 100% 85%, 100% 0%, 0% 0%);
     z-index: -1;
+
     &__content {
       height: 100%;
       width: 100%;
@@ -53,6 +54,13 @@
       & span {
         margin-left: 1rem;
       }
+
+      @include size(62.5em) {
+        top: -20%;
+      }
+    }
+    @include size(62.5em) {
+      order: 2;
     }
   }
   &__navigation {
@@ -77,9 +85,17 @@
       &:hover {
         background: rgba($color-grey-dark-2, 0.8);
         transform: scale(1.05);
-       
+
         box-shadow: $shadow--2;
       }
     }
+
+    @include size(62.5em) {
+      background: transparent;
+    }
+  }
+
+  @include size(62.5em) {
+    flex-direction: column;
   }
 }

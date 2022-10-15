@@ -1,0 +1,7 @@
+
+
+@mixin size($value) {
+  @media only screen and (max-width: $value) {
+    @content;
+  }
+}

@@ -1,5 +1,6 @@
 @import "../../global/variables.scss";
 @import "../../global/global.scss";
+@import "../../global/mixins.scss";
 
 .about {
   background-image: $secondary--gradient;
@@ -7,6 +8,7 @@
   margin-top: -10rem;
   padding: 12rem;
   display: flex;
+
   > * {
     transform: skewY(5deg);
   }
@@ -15,9 +17,13 @@
     text-align: center;
   }
   &__left {
-       @include margin-bottom-huge;
+    @include margin-bottom-huge;
     & h3 {
       margin-bottom: -2rem;
+    }
+    @include size(58.125em) {
+      order: 1;
+      margin-top: 60%;
     }
   }
   &__right {
@@ -29,23 +35,40 @@
     position: absolute;
     border-radius: 10px;
     box-shadow: $shadow--1;
+
     &--1 {
       top: 1rem;
       right: 19rem;
       z-index: 3;
+      @include size(58.125em) {
+        right: 39rem;
+      }
     }
     &--2 {
       top: -5rem;
       right: -5rem;
       z-index: 1;
+      @include size(58.125em) {
+        right: 15rem;
+      }
     }
     &--3 {
       top: 13rem;
       z-index: 2;
       right: 3rem;
+      @include size(58.125em) {
+        right: 23rem;
+      }
     }
     &:hover {
       transform: scale(1.2);
     }
+  }
+  @include size(62.5em) {
+    margin-top: -12rem;
+  }
+
+  @include size(58.125em) {
+    flex-direction: column;
   }
 }

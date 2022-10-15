@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./mixins.scss";
 
 .heading--primary {
   font-size: 10rem;
@@ -28,6 +29,9 @@
     transform: scale(1.4) skewX(-10deg);
     color: $color--primary;
   }
+  @include size(62.5em) {
+    font-size: 5rem;
+  }
 }
 
 .heading--text {
@@ -43,9 +47,11 @@
   font-weight: 500;
   padding: 0.7rem 3rem;
   font-size: 2rem;
+
+  @include size(62.5em) {
+    font-size: 2.5rem;
+  }
 }
 
 .heading--secondary {
 }
-
-
